@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Merry Christmas!</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="container"></div>
+  <div class="panel" id="ui">
+    <div class="row">
+      <label>主题颜色</label>
+      <input type="color" id="color" value="#ff8fbf">
+    </div>
+    <div class="row">
+      <label>粒子大小</label>
+      <input type="range" id="size" min="0.05" max="2" step="0.01" value="0.95">
+    </div>
+    <div class="row">
+      <label>闪烁强度</label>
+      <input type="range" id="sparkle" min="0" max="2" step="0.01" value="1">
+    </div>
+    <div class="row">
+      <label>旋转速度</label>
+      <input type="range" id="rot" min="0" max="3" step="0.01" value="0.15">
+    </div>
+    <div class="row">
+      <label><input type="checkbox" id="snow" checked> 雪花</label>
+    </div>
+    <div class="row buttons">
+      <button id="btnScreenshot">截图</button>
+      <button id="btnRecord">开始录制</button>
+    </div>
+  </div>
+  <script type="module" src="script.js"></script>
+</body>
+</html>
